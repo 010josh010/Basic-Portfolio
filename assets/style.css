@@ -1,0 +1,47 @@
+body{
+    background-color:#ffffff; 
+    
+}
+
+.content{
+    float:left; 
+    max-width: 50%; 
+    padding:15px; 
+    
+}
+
+.content h1{
+  
+    font-size:1.5em; 
+    font-family: georgia, serif;
+    color: #4aaaa5; 
+    padding:2%; 
+    
+    
+}
+
+.articlePhoto{
+    width:30%; 
+    height:30%; 
+}
+
+
+
+.social{
+    float:right; 
+    max-width:30%; 
+    padding:15px; 
+    
+    
+}
+
+footer{
+    clear:both; 
+    
+}
+
+.navList{
+    display:inline-block; 
+    
+}
+
