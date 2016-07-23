@@ -2,10 +2,16 @@ body{
     background-image:url(/assets/images/concrete_seamless.png)
 }
 
+h1{
+    font-weight:bold;
+}
+
+
+
 #name{
     background-color:#FFF; 
-    padding:20px 20px 0 20px; 
-    max-width:100%; 
+    padding:0; 
+    max-width:100%;
     margin:0; 
     border-bottom:2px solid #c3c3c3; 
     
@@ -14,67 +20,107 @@ body{
 #name h1{
     color:#FFF; 
     background-color:#4aaaa5; 
-    width:150px; 
-    padding:20px; 
+    width:160px;
+    padding:25px; 
     font-size:1.5em; 
-    margin:0 5%; 
+    margin:0 150px; 
     display:inline-block; 
 }
 
  nav {
-    display:inline-block; 
-    float:right;
-    margin:2% 20%; 
+     display:inline-block; 
+     margin-left:350px;
+     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     
 }
 
  nav a{
     text-decoration: none;
     color:#777;
-    margin:0 2px; 
+    margin:0 5px; 
+    padding:5px;
 }
 
+.active{
+    color:#000; 
+}
+
+nav a:hover{
+    cursor:pointer; 
+    color:#000; 
+}
 nav a:first-child{
-    border-right:1px solid #777;
+    border-right:1px solid #ccc;
       
 }
 
 nav a:nth-child(2){
-    border-right:1px solid #777;
+    border-right:1px solid #ccc;
 }
 
-
+.content-container{
+    margin-left:150px;
+    margin-right:auto;
+}
 
 .content{
     float:left;
-    margin:2% 2% 2% 5%; 
+    margin: 2% 25px 15px 0px; 
     background-color:#FFF; 
     padding:15px; 
-    max-width:40.625em; 
+    width:630px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#777;
+    overflow: auto; 
 }
 
 .content h1{
     color:#4aaaa5; 
     font-family: 'Georgia', Times, Times New Roman, serif;
-    padding:10px;
-    font-size:1.5em; 
+    padding:15px;
+    font-size:1.5em;
+    border-bottom:2px solid #ccc; 
     
 }
 
+#profile{
+    float:left;
+    width:30%;
+    margin:5px; 
+}
 .content p{
-    color:#777;
-    line-height: 25px; 
+    
+    line-height: 25px;
+    margin-top:1%; 
+}
+#form1{
+    margin:2%;
+    padding:5px; 
+}
+
+#form1 input{
+    font-size:1.5em; 
+    border:1px solid #ccc; 
+}
+
+#form1 label{
+    display:block; 
+}
+
+#submit{
+    margin-top:15px; 
+    background-color:#4aaaa5; 
+    color:#FFF; 
+    padding:10px 25px; 
 }
 
 .social{
-    float:right; 
+    float:left; 
     background-color:#FFF; 
-    max-width:16.875em; 
-    margin-top:2%; 
-    margin-right:15%; 
+    width:255px; 
+    margin:50px 0px 2% 20px;  
     padding:15px;
-    
-    
+    font-weight: bold;
 }
 
 .social h2{
@@ -82,26 +128,62 @@ nav a:nth-child(2){
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding:10px;
     font-size:1em; 
+    border-bottom:2px solid #ccc; 
 }
 
 .social img{
     width:30%; 
-    margin:0 1%; 
+    margin:15px 2px; 
 }
 
-.content img{
-    float:left; 
-    width:30%;
-    margin:2%; 
+.media-col-1{
+    float:left;
+    width:42%;
+    height: 450px; 
+    
     
 }
 
+.media-col-2{
+    float:right;
+    width:42%;
+    height: 450px;
+}
+
+.media-project{
+    text-align: center;
+    width:100%;
+    margin-top:20px; 
+    height:140px;
+    color:#FFF; 
+    font-weight: normal; 
+    
+}
+.media-project img{
+    width:100%;
+    height:140px;   
+}
+
+.media-project h2{
+    z-index: 1; 
+    position:relative; 
+    top:130px; 
+    background-color:#4aaaa5;
+    padding:10px;
+}
+
+
 footer{
-    clear:both; 
+    clear:both;
+    overflow: auto; 
+    width:100%; 
+    position:fixed; 
+    bottom:0px; 
     background-color:#666; 
-    padding:40px; 
+    padding:25px; 
     text-align:center; 
     color:#FFF; 
-    border-top:5px solid #4aaaa5;; 
+    border-top:5px solid #4aaaa5;
+   
     
 }
