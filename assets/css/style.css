@@ -95,8 +95,8 @@ nav a:nth-child(2){
     padding:5px; 
 }
 
-#form1 input{
-    font-size:1.5em; 
+#name, #email, textarea{
+    font-size:1em; 
     border:1px solid #ccc; 
 }
 
@@ -108,7 +108,9 @@ nav a:nth-child(2){
     margin-top:15px; 
     background-color:#4aaaa5; 
     color:#FFF; 
-    padding:10px 25px; 
+    padding:10px 25px;
+    cursor:pointer;
+    font-size:1.2em; 
 }
 
 .social{

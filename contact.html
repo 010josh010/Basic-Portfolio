@@ -28,11 +28,11 @@
         
        <form  name="form1" id="form1" action="formmail.php" method="POST">
        <label for="name"> Name</label><br>
-       <input id="name" name="name" type="text" required id="name" form="form1" size="47"><br><br>  
+       <input id="name" name="name" type="text" required id="name" form="form1" size="80"><br><br>  
        <label for="email"> Email</label> <br>
-       <input id="email" name="email" type="email" required id="email" form="form1" size="47"><br>
+       <input id="email" name="email" type="email" required id="email" form="form1" size="73"><br>
        <label for ="textarea"><br>Message</label><br> 
-       <textarea id="message" type="textarea"name="message" cols="95" rows="10"required id="message"></textarea><br>
+       <textarea id="message" type="textarea"name="message" cols="72" rows="10"required id="message"></textarea><br>
        <input id="submit" type="submit" name="submit" id="submit" value="Submit">
        </form>
          
@@ -56,9 +56,28 @@
        
            </aside>
        </div>
+    
    
    
-<footer> Copyright 2016 Joshua Vaughn</footer>    
+<footer> Copyright 2016 Joshua Vaughn</footer>
+
+    
+        
+            
+<script>
+    var submit = document.getElementById("submit"); 
+    var name = document.getElementById("name");
+    var email= document.getElementById("email");
+    var message= document.getElementById("message"); 
+    submit.onclick = function(){
+       for(i=0;i <=email.value.length; i++){
+                if(email.value[i] === "@" && name.value !== "" && message.value !== ""){
+                    alert("Thank you for your message!"); 
+                }
+            };
+        
+    }
+    </script>    
 </body>
 
 </html>

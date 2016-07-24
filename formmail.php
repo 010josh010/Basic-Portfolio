@@ -17,7 +17,7 @@
 <?php
   $name=addslashes($_POST['name']);
   $email=addslashes($_POST['email']);
-  $comments=addslashes($_POST['comments']);
+  $message=addslashes($_POST['message']);
 
  // you can specify which email you want your contact form to be emailed to here
 
@@ -30,8 +30,8 @@
 
   $body = "Name: ".$name."<br>\n"
             ."Email: ".$email."<br>\n"
-            ."Comments:<br>\n"
-            .$comments;
+            ."Message:<br>\n"
+            .$message;
 
   if (!ereg("^[a-zA-Z0-9_.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$", $email))
   {
@@ -49,11 +49,11 @@
     var submit = document.getElementById("submit"); 
     var name = document.getElementById("name");
     var email= document.getElementById("email");
-    var comments= document.getElementById("comments"); 
+    var message= document.getElementById("message"); 
     submit.onclick = function(){
        for(i=0;i <=email.value.length; i++){
-                if(email.value[i] === "@" && name.value !== "" && comments.value !== ""){
-                    alert("Thank you for your comments!"); 
+                if(email.value[i] === "@" && name.value !== "" && message.value !== ""){
+                    alert("Thank you for your message!"); 
                 }
             };
         
